@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Geek</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link {
+            color: #3CD6EB;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            background-color: black;
+        }
+
+        .carousel img {
+            height: 600px;
+        }
+
+        .col-md-6,
+        .col-sm-12 {
+            padding: 16px;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        #contato img {
+            height: 46px;
+            padding: 2px;
+        }
+
+        @media screen and (max-width:780px){
+            #carousel-imagens img {
+                width: 100%;
+                height: 280px;
+            }
+        }
+
+        @media screen and (min-width:820px) and (max-width:1180px){
+            #carousel-imagens img {
+                width: 100%;
+                height: 500px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="navbar-brand w-25">
+                    <img src="./imagens/logo.gif" class="navbar-brand w-25"/>
+                </div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades">Novidades</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+    </header>
+    <div id="novidades" class="container">
+        <div id="carousel-imagens" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <a href="#jogos_xbox">
+                        <img class="d-block w-100 p-3" src="./imagens/game_pass.jpg"/>
+                    </a>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <a href="#funko_harry">
+                        <img class="d-block w-100 p-3" src="./imagens/funko.jpg"/>
+                    </a>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <a href="#tapetes">
+                        <img class="d-block w-100 p-3" src="./imagens/tapetes.gif"/>
+                    </a>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-imagens" data-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-imagens" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-imagens" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-imagens" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-imagens" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div id="produtos" class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article id="tapetes" class="card text-bg-dark">
+                    <header class="card-header">
+                        TAPETE GEEK
+                    </header>
+                    <img src="./imagens/tapete_yoda.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$49,90</h4>
+                        <p class="card-text">
+                            Tapete Yoda - Trazer cerveja você deve!
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        TAPETE GEEK
+                    </header>
+                    <img src="./imagens/tapete_banho.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$49,90</h4>
+                        <p class="card-text">
+                            Tapete Yoda - Tomar banho você deve!
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        TAPETE GEEK
+                    </header>
+                    <img src="./imagens/tapete_superMario.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$49,90</h4>
+                        <p class="card-text">
+                            Tapete Super Mario - Super Bem-Vindo
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        FUNKO POP
+                    </header>
+                    <img src="imagens/funko_babyYoda.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$99,90</h4>
+                        <p class="card-text">
+                            Funko Pop - Baby Yoda Mandalorian
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article id="funko_harry" class="card text-bg-dark">
+                    <header class="card-header">
+                        FUNKO POP
+                    </header>
+                    <img src="imagens/funko_harryPotter.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$99,90</h4>
+                        <p class="card-text">
+                            Funko Pop - Harry Potter e Edwiges
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        FUNKO POP
+                    </header>
+                    <img src="imagens/funko_strangerThings.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$99,90</h4>
+                        <p class="card-text">
+                            Funko Pop - Mike Stranger Things
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article id="jogos_xbox" class="card text-bg-dark">
+                    <header class="card-header">
+                        JOGO XBOX
+                    </header>
+                    <img src="imagens/jogo_zombieArmy.jpg"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$79,90</h4>
+                        <p class="card-text">
+                            Jogo XBOX - Zombie Army Dead War 4
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        JOGO XBOX
+                    </header>
+                    <img src="imagens/jogo_tombRaider.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$199,90</h4>
+                        <p class="card-text">
+                            Jogo XBOX - Rise of the Tomb Raider 
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        JOGO XBOX
+                    </header>
+                    <img src="imagens/jogo_one_piece.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">R$249,90</h4>
+                        <p class="card-text">
+                            Jogo XBOX - One Piece Odyssey 
+                        </p>
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="contato" class="container-fluid">
+        <footer class="text-center text-lg-start" style="background-color: #fff;" >
+        <div class="container d-flex justify-content-center py-3" >
+            <a href="https://github.com/paularrabelo">
+                <img src="imagens/github.png"/>
+            </a>
+            <a href="https://www.linkedin.com/in/paula-rabelo-56843810b/">
+                <img src="imagens/linkedin.png"/>
+            </a>
+            <a href="https://www.instagram.com/paula_rrabelo/">
+                <img src="imagens/instagram.png"/>
+            </a>
+        </div>
+        <div class="text-center text-black p-3">
+            © 2023 Copyright:
+            <a class="text-black" href="https://github.com/paularrabelo">Paula Rabelo</a>
+        </div>
+        </footer>
+        
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
